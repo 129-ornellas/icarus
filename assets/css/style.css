@@ -1286,8 +1286,37 @@ section {
   color: #fff;
 }
 
-.team .member .social a:hover {
-  background: #111111;
+@media (max-width: 768px) {
+  .team .member .social {
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    right: 0;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .team .member .social a {
+    color: #111111;
+    margin: 0 3px;
+    border-radius: 50px;
+    width: 36px;
+    height: 36px;
+    background: #102b66;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+
+}
+
+@media (min-width: 768px) {
+  .team .member .social a:hover {
+    background: #111111;
+  }
 }
 
 .team .member .social i {
