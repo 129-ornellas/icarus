@@ -13,6 +13,6 @@ jobs:
     - name: dev
       uses: locaweb/ftp-deploy@1.0.0
       with:
-        host: ${{ secrets.TESTE }}
+        host: ${{ variables.TESTE }}
         user: ${{ secrets.actions.USER }}
         password: ${{ secrets.actions.PASS }}
